@@ -1,0 +1,28 @@
+{
+  "name": "berozgar-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Marketing website for Berozgar Editor — built with React, Tailwind CSS and Material UI.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^7.3.5"
+  }
+}
+
