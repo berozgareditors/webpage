@@ -25,26 +25,87 @@ export const navLinks = [
 // icon names map to @mui/icons-material components inside Services.jsx
 export const services = [
   {
-    key: "graphic",
+    key: "design",
+    name: "Ansh",
+    designation: "Full-Stack Dev",
     title: "Graphic designing",
-    icon: "DesignServicesRounded",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    // Assigning one of your videos from image_e7626c.png
+    character: "/characters/ansh.mp4", 
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"]
   },
   {
     key: "video",
     title: "Video editing",
-    icon: "MovieCreationRounded",
     blurb: "Cinematic cuts, color grading and pacing that hold attention.",
-    featured: true,
+    // Assigning another video
+    character: "/characters/berozgar.mp4", 
+    shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
   {
     key: "web",
     title: "Web development",
-    icon: "CodeRounded",
     blurb: "Fast, responsive sites that turn visitors into customers.",
+    // Assigning a tech-related video
+    character: "/characters/tech.mp4", 
+    shots: ["/work/web-1.jpg", "/work/web-2.jpg"]
+  },
+
+  {
+    key: "design",
+    title: "Graphic designing",
+    blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    character: "/characters/toxic beast.mp4", 
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"]
+  },
+  // ADD NEW SERVICES BELOW:
+  {
+    key: "seo",
+    title: "SEO Optimization",
+    blurb: "Rank higher on search engines and get found by your ideal clients.",
+    character: "/characters/hello sharqua.mp4", // Ensure this file exists in /public/characters/
+    shots: ["/work/seo-1.jpg", "/work/seo-2.jpg"]
+  },
+  {
+    key: "marketing",
+    title: "Digital Marketing",
+    blurb: "Strategic campaigns that convert followers into loyal customers.",
+    character: "/characters/marketing.mp4",
+    shots: ["/work/market-1.jpg", "/work/market-2.jpg"]
+  },
+  {
+    key: "design",
+    title: "Graphic designing",
+    blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    character: "/characters/ansh.mp4",
+    // Always provide 2 shots, or a placeholder if missing
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
+  },
+  {
+    key: "design",
+    title: "Graphic designing",
+    blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    character: "/characters/coffee shaqua.mp4",
+    // Always provide 2 shots, or a placeholder if missing
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
+  },
+  {
+    key: "design",
+    title: "Graphic designing",
+    blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    character: "/characters/hello me.mp4",
+    // Always provide 2 shots, or a placeholder if missing
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
+  },
+  {
+    key: "design",
+    title: "Graphic designing",
+    blurb: "Logos, brand kits & social creative that make you unmistakable.",
+    character: "/characters/ansh.mp4",
+    // Always provide 2 shots, or a placeholder if missing
+    shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
 ];
-
 // Portfolio thumbnails. Swap `image` with files in /src/assets when ready.
 export const works = [
   { title: "Brand identity system", category: "Graphic Design", seed: "berozgar-1", span: "lg" },
@@ -117,3 +178,5 @@ export const footer = {
     "UGC Video",
   ],
 };
+
+
