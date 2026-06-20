@@ -54,7 +54,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/toxic beast.mp4", 
+    character: "/characters/hellobhai.mp4", 
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"]
   },
   // ADD NEW SERVICES BELOW:
