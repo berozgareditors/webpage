@@ -39,7 +39,7 @@ export const services = [
     title: "Video editing",
     blurb: "Cinematic cuts, color grading and pacing that hold attention.",
     // Assigning another video
-    character: "/characters/berozgar.mp4", 
+    character: "/characters/hellosharqua.mp4", 
     shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
   {
