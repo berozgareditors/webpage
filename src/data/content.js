@@ -46,7 +46,7 @@ export const services = [
     key: "video",
     title: "Video editing",
     blurb: "Cinematic cuts, color grading and pacing that hold attention.",
-    character: "/characters/hellosharqua.mp4", 
+    character: "/characters/hello-sharqua.mp4", 
     shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
 
@@ -54,7 +54,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/hellobhai.mp4", 
+    character: "/characters/hello-me.mp4", 
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"]
   },
   // ADD NEW SERVICES BELOW:
@@ -62,7 +62,7 @@ export const services = [
     key: "seo",
     title: "SEO Optimization",
     blurb: "Rank higher on search engines and get found by your ideal clients.",
-    character: "/characters/hello sharqua.mp4", // Ensure this file exists in /public/characters/
+    character: "/characters/hello-sharqua.mp4", // Ensure this file exists in /public/characters/
     shots: ["/work/seo-1.jpg", "/work/seo-2.jpg"]
   },
   {
@@ -84,7 +84,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/coffee shaqua.mp4",
+    character: "/characters/coffee-shaqua.mp4",
     // Always provide 2 shots, or a placeholder if missing
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
@@ -92,7 +92,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/hello me.mp4",
+    character: "/characters/hello-me.mp4",
     // Always provide 2 shots, or a placeholder if missing
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
