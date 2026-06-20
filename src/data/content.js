@@ -43,12 +43,11 @@ export const services = [
     shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
   {
-    key: "web",
-    title: "Web development",
-    blurb: "Fast, responsive sites that turn visitors into customers.",
-    // Assigning a tech-related video
-    character: "/characters/tech.mp4", 
-    shots: ["/work/web-1.jpg", "/work/web-2.jpg"]
+    key: "video",
+    title: "Video editing",
+    blurb: "Cinematic cuts, color grading and pacing that hold attention.",
+    character: "/characters/hellosharqua.mp4", 
+    shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
 
   {
