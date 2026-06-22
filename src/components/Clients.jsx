@@ -1,38 +1,63 @@
+import { motion } from "framer-motion";
+import { clients } from "../data/content.js"; // Ensure this contains the objects mapped to your image paths
 import Reveal from "./Reveal.jsx";
-import { clients } from "../data/content.js";
 
 export default function Clients() {
   return (
-    <section
-      id="clients"
-      className="relative bg-gradient-to-b from-ink via-brand-dark to-brand py-20 sm:py-28"
-    >
-      <div className="container-x">
-        <Reveal>
-          <h2 className="text-center font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            Clients we worked with
-          </h2>
-        </Reveal>
+    <section id="clients" className="relative bg-[#020202] py-32 overflow-hidden">
+      {/* Premium Mesh Gradient Background */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <motion.div 
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 90, 0],
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] bg-[#FF3E20]/20 rounded-full blur-[150px]"
+        />
+        <motion.div 
+          animate={{
+            scale: [1.2, 1, 1.2],
+            rotate: [0, -90, 0],
+          }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute top-[20%] -right-[10%] w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[150px]"
+        />
+      </div>
 
-        {/*
-          These are placeholder name cards. Only show logos of clients you've
-          actually worked with, and with their permission. Replace each card
-          with an <img> of the official logo (SVG/PNG) from /src/assets.
-        */}
-        <Reveal delay={120}>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            {clients.map((c) => (
-              <div
-                key={c}
-                className="grid h-20 min-w-[150px] flex-1 place-items-center rounded-2xl border border-white/15 bg-white/10 px-6 backdrop-blur-sm sm:min-w-[180px] sm:max-w-[220px]"
-              >
-                <span className="font-display text-xl font-bold tracking-tight text-white sm:text-2xl">
-                  {c}
-                </span>
-              </div>
-            ))}
+      <div className="container-x relative z-10">
+        <Reveal>
+          <div className="mb-24 text-center">
+            <h2 className="text-white font-black text-7xl md:text-8xl uppercase tracking-tighter italic">
+              Partners
+            </h2>
+            <p className="text-[#FF3E20] uppercase tracking-[0.5em] font-semibold text-[10px] mt-4">
+              Trusted by industry leaders
+            </p>
           </div>
         </Reveal>
+
+        {/* Logo Marquee */}
+        <div className="relative flex overflow-hidden border-y border-white/5 py-12 backdrop-blur-sm bg-white/[0.01]">
+          <motion.div
+            className="flex gap-20 whitespace-nowrap items-center"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ duration: 60, ease: "linear", repeat: Infinity }}
+          >
+            {[...clients, ...clients].map((c, i) => (
+              <div 
+                key={i} 
+                className="flex items-center justify-center h-24 min-w-[200px]"
+              >
+                <img 
+                  src={c.logo} 
+                  alt={c.name} 
+                  className="h-20 w-auto object-contain opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500 cursor-default"
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

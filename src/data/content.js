@@ -154,7 +154,13 @@ export const testimonials = [
 ];
 
 // Replace with logos of *actual* clients (with their permission).
-export const clients = ["Google", "Zomato", "Zerodha", "Swiggy", "Razorpay"];
+export const clients = [
+  { name: "Drink Rentro", logo: "/characters/drinkrentro.png" },
+  { name: "GK Interior", logo: "/characters/gkinterior.png" },
+  { name: "Neem Force", logo: "/characters/neemforcewoodencombo.png" },
+  { name: "Sai Ram Interior", logo: "/characters/sairaminterior.png" },
+  { name: "Saree Mandir", logo: "/characters/sareemandir.png" }
+];
 
 export const socials = [
   { label: "X", href: "https://x.com", icon: "x" },
@@ -178,5 +184,7 @@ export const footer = {
     "UGC Video",
   ],
 };
+
+
 
 
