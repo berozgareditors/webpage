@@ -126,6 +126,26 @@ export const features = [
     icon: "GroupsRounded",
     body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
   },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
 ];
 
 export const testimonials = [
