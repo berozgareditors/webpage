@@ -43,19 +43,18 @@ export const services = [
     shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
   {
-    key: "web",
-    title: "Web development",
-    blurb: "Fast, responsive sites that turn visitors into customers.",
-    // Assigning a tech-related video
-    character: "/characters/tech.mp4", 
-    shots: ["/work/web-1.jpg", "/work/web-2.jpg"]
+    key: "video",
+    title: "Video editing",
+    blurb: "Cinematic cuts, color grading and pacing that hold attention.",
+    character: "/characters/hello-sharqua.mp4", 
+    shots: ["/work/video-1.jpg", "/work/video-2.jpg"]
   },
 
   {
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/toxic beast.mp4", 
+    character: "/characters/hello-me.mp4", 
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"]
   },
   // ADD NEW SERVICES BELOW:
@@ -63,7 +62,7 @@ export const services = [
     key: "seo",
     title: "SEO Optimization",
     blurb: "Rank higher on search engines and get found by your ideal clients.",
-    character: "/characters/hello sharqua.mp4", // Ensure this file exists in /public/characters/
+    character: "/characters/hello-sharqua.mp4", // Ensure this file exists in /public/characters/
     shots: ["/work/seo-1.jpg", "/work/seo-2.jpg"]
   },
   {
@@ -85,7 +84,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/coffee shaqua.mp4",
+    character: "/characters/coffee-shaqua.mp4",
     // Always provide 2 shots, or a placeholder if missing
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
@@ -93,7 +92,7 @@ export const services = [
     key: "design",
     title: "Graphic designing",
     blurb: "Logos, brand kits & social creative that make you unmistakable.",
-    character: "/characters/hello me.mp4",
+    character: "/characters/hello-me.mp4",
     // Always provide 2 shots, or a placeholder if missing
     shots: ["/work/design-1.jpg", "/work/design-2.jpg"] 
   },
@@ -124,6 +123,26 @@ export const features = [
   },
   {
     title: "Expert creative team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
+    icon: "GroupsRounded",
+    body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
+  },
+  {
+    title: "Expert Video team",
     icon: "GroupsRounded",
     body: "A passionate team of directors, editors and cinematographers who treat every frame of your story like it matters.",
   },

@@ -33,37 +33,67 @@ function FeatureCard({ feature, index }) {
 }
 
 export default function WhyTrust() {
+  // Split features into pairs so we can align them perfectly row-by-row
+  const row1LeftFeatures = features.slice(0, 2);
+  const row2LeftFeatures = features.slice(2, 4);
+  const row2RightFeatures = features.slice(4); // 5th, 6th, etc.
+
   return (
     <section id="why-us" className="bg-ink py-20 sm:py-28">
       <div className="container-x">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          {/* Left: feature cards */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {features.map((f, i) => (
+        {/* Master Grid */}
+        <div className="grid grid-cols-1 items-start gap-y-6 lg:grid-cols-2 lg:gap-x-10">
+          
+          {/* Top Left: Cards 1 & 2 */}
+          {/* order-2 on mobile, lg:order-1 on desktop */}
+          <div className="order-2 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:order-1">
+            {row1LeftFeatures.map((f, i) => (
               <FeatureCard key={f.title} feature={f} index={i} />
             ))}
           </div>
 
-          {/* Right: headline + CTA */}
-          <Reveal delay={160} className="lg:pl-6">
-            <h2 className="font-impact text-5xl uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
-              Why brands trust {brand.full}
-            </h2>
-            <p className="mt-6 max-w-md text-base text-white/70">
-              From raw footage to final cut, we craft powerful visual experiences.
-              Let your story shine with industry-grade editing and post-production.
-            </p>
-            <Button
-              href="#contact"
-              size="large"
-              variant="contained"
-              color="primary"
-              endIcon={<ArrowForwardRounded />}
-              className="!mt-8"
-            >
-              Let&rsquo;s create together
-            </Button>
-          </Reveal>
+          {/* Top Right: Headline + CTA */}
+          {/* order-1 on mobile (makes it top), lg:order-2 on desktop (puts it top right) */}
+          <div className="order-1 flex flex-col justify-center lg:order-2 lg:pl-6">
+            <Reveal delay={160}>
+              <h2 className="font-impact text-5xl uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+                Why brands trust {brand.full}
+              </h2>
+              <p className="mt-6 max-w-md text-base text-white/70">
+                From raw footage to final cut, we craft powerful visual experiences.
+                Let your story shine with industry-grade editing and post-production.
+              </p>
+              <Button
+                href="#contact"
+                size="large"
+                variant="contained"
+                color="primary"
+                endIcon={<ArrowForwardRounded />}
+                className="!mt-8"
+              >
+                Let&rsquo;s create together
+              </Button>
+            </Reveal>
+          </div>
+
+          {/* Bottom Left: Cards 3 & 4 */}
+          {/* order-3 on both mobile and desktop */}
+          <div className="order-3 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:order-3">
+            {row2LeftFeatures.map((f, i) => (
+              <FeatureCard key={f.title} feature={f} index={i + 2} />
+            ))}
+          </div>
+
+          {/* Bottom Right: Cards 5 & 6 */}
+          {/* order-4 on both mobile and desktop */}
+          {row2RightFeatures.length > 0 && (
+            <div className="order-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:order-4 lg:pl-6">
+              {row2RightFeatures.map((f, i) => (
+                <FeatureCard key={f.title} feature={f} index={i + 4} />
+              ))}
+            </div>
+          )}
+          
         </div>
       </div>
     </section>
