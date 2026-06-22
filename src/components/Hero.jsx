@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="min-h-[70vh] w-12 absolute left-0 [writing-mode:vertical-rl] flex items-center justify-center cursor-pointer transition-transform duration-500 hover:scale-[0.98] origin-left bg-white/10 backdrop-blur-lg border-r border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.15)]">
           <p className="text-xl font-bold whitespace-nowrap rotate-180">DOWNLOAD BROCHURE</p>
         </div>
-        <div className="min-h-[70vh] w-12 absolute right-0 [writing-mode:vertical-rl] flex items-center justify-center cursor-pointer transition-transform duration-500 hover:scale-[0.98] origin-left bg-white/10 backdrop-blur-lg border-r border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.15)]">
+        <div className="min-h-[70vh] w-12  absolute right-0 [writing-mode:vertical-rl] flex items-center justify-center cursor-pointer transition-transform duration-500 hover:scale-[0.98] origin-left bg-white/10 backdrop-blur-lg border-r border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.15)]">
           <p className="text-xl font-bold whitespace-nowrap rotate-180">DOWNLOAD BROCHURE</p>
         </div>
       </div>
