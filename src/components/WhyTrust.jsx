@@ -1,7 +1,7 @@
 import { MovieFilterRounded, GroupsRounded, ArrowForwardRounded } from "@mui/icons-material";
 import Button from "@mui/material/Button";
 import Reveal from "./Reveal.jsx";
-import { features, brand } from "../data/content.js";
+import { features, brand,features2 } from "../data/content.js";
 
 const ICONS = { MovieFilterRounded, GroupsRounded };
 
@@ -66,6 +66,11 @@ export default function WhyTrust() {
           </Reveal>
         </div>
       </div>
+      <div className="w-[30%] flex">
+            {features2.map((f, i) => (
+              <FeatureCard key={f.title} feature={f} index={i} />
+            ))}
+          </div>
     </section>
   );
 }
