@@ -7,7 +7,7 @@ import theme from "./theme.js";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <>
+  <React.StrictMode>
     {/* injectFirst puts MUI styles before Tailwind so Tailwind utilities win on conflicts */}
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
@@ -15,5 +15,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </ThemeProvider>
     </StyledEngineProvider>
-  </>
+  </React.StrictMode>
 );
