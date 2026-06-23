@@ -5,11 +5,12 @@
   "type": "module",
   "description": "Marketing website for Berozgar Editor — built with React, Tailwind CSS and Material UI.",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "vite build",
+    "build:docs": "vite build --outDir docs",
+    "preview": "vite preview",
+    "predeploy": "npm run build:docs",
+    "deploy": "gh-pages -d dist"
     },
   "dependencies": {
     "@emotion/react": "^11.13.3",
