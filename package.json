@@ -9,8 +9,8 @@
     "build": "vite build",
     "build:docs": "vite build --outDir docs",
     "preview": "vite preview",
-    "predeploy": "npm run build:docs",
-    "deploy": "gh-pages -d dist"
+    "deploy:gh-pages": "gh-pages -d dist",
+    "predeploy:docs": "npm run build:docs"
     },
   "dependencies": {
     "@emotion/react": "^11.13.3",
