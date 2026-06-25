@@ -1,5 +1,6 @@
 import Reveal from "./Reveal.jsx";
 import { aboutParagraph } from "../data/content.js";
+import helloBanner from "../../public/Hello Banner.jpeg"
 
 export default function HelloSection() {
   return (
@@ -9,17 +10,21 @@ export default function HelloSection() {
           <div className="relative">
             {/* Overlapping heading: "Hello" over the photo, "guys" over the red panel.
                 On mobile both stack over the photo, so keep both readable. */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 font-display text-center">
-              <span className="text-white text-5xl font-extrabold tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-6xl lg:text-7xl lg:drop-shadow-none">Hello Guys</span>{" "}
-              {/* <span className="text-white lg:text-black">guys</span> */}
-            <p className="py-3">{aboutParagraph}</p>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 font-display text-center w-full px-4 max-w-2xl">
+              <span className="text-white text-2xl font-bold tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] sm:text-3xl md:text-4xl lg:drop-shadow-none">
+                Hello Guys
+              </span>{" "}
+
+              <p className="py-2 text-xs text-white/90 max-w-md mx-auto sm:text-sm md:text-base leading-relaxed">
+                {aboutParagraph}
+              </p>
             </div>
 
             <div className="h-[]">
               {/* Replace with your own studio/founder photo from /src/assets */}
               <div className="relative">
                 <img
-                  src="https://sorozatwiki.hu/wp-content/uploads/2021/10/netflix_2021.jpg"
+                  src={helloBanner}
                   alt="An editor at work by a window at golden hour"
                   className="h-64 w-full object-cover sm:h-80 lg:h-full opacity-30 rounded-[50px_0_50px_0]"
                   loading="lazy"
